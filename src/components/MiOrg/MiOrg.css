@@ -1,0 +1,36 @@
+.orgSection{
+    width: 80%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    
+}
+
+.orgSection .titulo{
+    color:#6278F7;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 24px;
+    border-bottom: 4px solid #6278F7;
+    margin: auto;
+
+}
+
+.orgSection img{
+
+    cursor:pointer;
+    width:20%;
+}
+
+
+@media screen and (min-width:550px){
+
+    .orgSection .titulo{
+        font-size: 2.5rem;
+    }
+    .orgSection img{
+        width:auto;
+    }
+    
+}

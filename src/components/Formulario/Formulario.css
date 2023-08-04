@@ -1,0 +1,41 @@
+.formulario{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:40px 0;
+
+}
+
+.formulario form{
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 20px;
+    background: #F6F6F6;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 25%);
+    padding: 8px 10%;
+    box-sizing: border-box;
+}
+
+.formulario h2{
+    font-size:1.5rem;
+    font-weight: 400;
+    color: #212121;
+    text-align: center;
+}
+
+.boton{
+    width:100%;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width:550px){
+    .formulario h2{
+        font-size:2rem;
+        text-align: left;
+    }
+    .boton{
+        width:auto;
+        font-size: 1.2rem;
+    }
+}
