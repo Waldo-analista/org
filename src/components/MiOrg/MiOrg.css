@@ -11,7 +11,8 @@
     color:#6278F7;
     font-size: 1.5rem;
     font-weight: 400;
-    padding-bottom: 24px;
+    padding-top: 1rem;
+    padding-bottom: 10px;
     border-bottom: 4px solid #6278F7;
     margin: auto;
 
@@ -32,5 +33,9 @@
     .orgSection img{
         width:auto;
     }
+
+    .orgSection .titulo{
+    padding-bottom: 24px;
+}
     
 }
