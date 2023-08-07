@@ -56,6 +56,10 @@
     line-height: 1.5rem;
     margin-top: 1rem;
 }
+.footer__contenedor__iconos__titulo{
+    text-align: center;
+    font-weight: 500;
+}
 @media screen and (min-width:550px){
     .footer{
         height: 213px;

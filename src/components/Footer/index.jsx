@@ -4,7 +4,10 @@ const Footer=()=>{
     return <footer className='footer' >
     <div className='footer__contenedor'>
         <a className='footer__logo' href='/' title="Aplicación Organización"><img src="/img/Logo.png" alt='Organización'/></a>
+        <div classname="footer__contenedor__iconos">
+            <h3 className='footer__contenedor__iconos__titulo'>Redes Sociales</h3>
         <div className='footer__iconos'>
+            
             <a className="footer_iconos--redes" href="https://www.facebook.com/waldohidalgooyarcej" title='Facebook de Waldo' target='_blank'>
                 <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook.png" alt="facebook"/>
             </a>
@@ -17,6 +20,7 @@ const Footer=()=>{
             <a className="footer_iconos--redes" href="https://github.com/Waldo-analista/" title='GitHub de Waldo' target='_blank'>
                 <img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/>
             </a>
+        </div>
         </div>
         
     </div>
