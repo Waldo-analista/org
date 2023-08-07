@@ -1,15 +1,7 @@
 import "./ListaOpciones.css";
 
 const ListaOpciones = (props) => {
-  const equipos = [
-    "Programación",
-    "Front End",
-    "Data Science",
-    "DevOps",
-    "UX y Design",
-    "Móvil",
-    "Innovación y Gestión",
-  ];
+  const equipos = props.datos.map(objeto=>objeto.titulo);
 
   const actualizarValue=(e)=>{
     props.actualizarValor(e.target.value);

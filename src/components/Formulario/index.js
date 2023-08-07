@@ -5,12 +5,13 @@ import "./Formulario.css"
 import { useState } from "react";
 
 
-const Formulario = ()=>{
+const Formulario = (props)=>{
 
     const [nombre,actualizarNombre]=useState('');
     const [puesto,actualizarPuesto]=useState('');
     const [foto,actualizarFoto]=useState('');
     const [equipo, actualizarEquipo]=useState('Selecciona una opción');
+    
 
     const manejarEnvio=(e)=>{
             e.preventDefault();
@@ -20,6 +21,8 @@ const Formulario = ()=>{
                 nombre,puesto,foto,equipo
             }
             console.log('Manejar el envío',datosAEnviar);
+
+            props.registrarColaborador(datosAEnviar);
         }
             
     }
@@ -30,7 +33,7 @@ const Formulario = ()=>{
             <CampoTexto titulo="Nombre" placeholder="Ingresar Nombre" required valor={nombre} actualizarValor={actualizarNombre} />
             <CampoTexto titulo="Puesto" placeholder="Ingresar Puesto" required valor={puesto} actualizarValor={actualizarPuesto}/>
             <CampoTexto titulo="Foto" placeholder="Ingresar Foto" required valor={foto} actualizarValor={actualizarFoto}/>
-            <ListaOpciones required valor={equipo} actualizarValor={actualizarEquipo}/>
+            <ListaOpciones datos={props.datos}required valor={equipo} actualizarValor={actualizarEquipo}/>
             <Boton >Crear Colaborador</Boton>
         </form>
     </section>

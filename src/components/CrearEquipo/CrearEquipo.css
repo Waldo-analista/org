@@ -1,0 +1,29 @@
+.equipo{
+    
+    background-color: #D9F7E9;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.equipo__titulo{
+    width: fit-content;
+    margin-bottom:1rem;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Prata', serif;
+    padding-bottom: 10px;
+    color:#212121;
+    border-bottom: 4px solid #57C278;
+    
+}
+
+.equipo__colaboradores{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    row-gap: 1rem;
+}
