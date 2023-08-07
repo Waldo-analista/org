@@ -13,9 +13,9 @@ const CrearEquipo=(props)=>{
     
     return colaboradores.length>0 && <section className="equipo" style={{backgroundColor:hexToRgba(colorDestaque,'0.3')}}>
         <div className='equipo__contenedorColor'>
-            <label htmlFor='Selecciona Color' className='equipo__contenedorColor__titulo'>Selecciona un color <img src="https://img.icons8.com/stickers/100/arrow.png" alt="arrow"/> </label>
+            <label htmlFor={titulo} className='equipo__contenedorColor__titulo'>Selecciona un color <img src="https://img.icons8.com/stickers/100/arrow.png" alt="arrow"/> </label>
         <input
-        id='Selecciona Color'
+        id={titulo}
         className="equipo__seleccionarColor"
         type="color"
         value={colorDestaque}
