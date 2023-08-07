@@ -29,6 +29,12 @@
 }
 
 
+.swal-text{
+    text-align: center;
+    color:black;
+    font-family: 'Montserrat',sans-serif;
+}
+
 @media screen and (min-width:550px){
     .formulario h2{
         font-size:2rem;

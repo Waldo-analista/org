@@ -1,7 +1,7 @@
 .colaborador{
     display:flex;
     flex-direction: column;
-    width:23%;
+    width:60%;
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 25%);
     border-radius: 10%;
     background-color: white;
@@ -44,4 +44,19 @@
     color:#212121;
     word-wrap: break-word;
     width: 100%;
+}
+
+
+@media screen and (min-width:550px){
+    .colaborador{
+        width:35%;
+    }
+ 
+}
+
+@media screen and (min-width:768px){
+    .colaborador{
+        width:23%;
+    }
+ 
 }

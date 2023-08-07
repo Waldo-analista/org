@@ -1,8 +1,10 @@
+import swal from "sweetalert";
 import Boton from "../Boton";
 import CampoTexto from "../CampoTexto";
 import ListaOpciones from "../ListaOpciones";
 import "./Formulario.css"
 import { useState } from "react";
+
 
 
 const Formulario = (props)=>{
@@ -15,14 +17,26 @@ const Formulario = (props)=>{
 
     const manejarEnvio=(e)=>{
             e.preventDefault();
-            if(equipo==='Selecciona una opción'){alert('Debes seleccionar un Equipo')}
+            if(equipo==='Selecciona una opción'){swal("¡ Advertencia !",'Debes seleccionar un equipo','warning');}
             else{
-            let datosAEnviar={
-                nombre,puesto,foto,equipo
-            }
-            console.log('Manejar el envío',datosAEnviar);
-
-            props.registrarColaborador(datosAEnviar);
+                let datosAEnviar={
+                    nombre,puesto,foto,equipo
+                }
+            
+                    try{
+                        const formatoImagen=foto.split('.').pop().toLowerCase();
+                        const formatoPermitido=['jpg','jpeg','png','webp'];
+                        if(formatoPermitido.includes(formatoImagen)){
+                            props.registrarColaborador(datosAEnviar);
+                            console.log('Manejar el envío',datosAEnviar);
+                        }else{
+                            swal("¡ Advertencia !",'Ingresa una URL de imagen válida: PNG, JPEG, JPG, WEBP','warning');
+                        }
+                    
+                
+                }
+                    catch{swal("¡ Advertencia !",'Ingresa una URL de imagen válida: PNG, JPEG, JPG, WEBP','warning');}
+            
         }
             
     }
