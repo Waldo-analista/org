@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     margin:40px 0;
+    row-gap: 2rem;
 
 }
 
@@ -14,9 +15,13 @@
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 25%);
     padding: 8px 10%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .formulario h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-size:1.5rem;
     font-weight: 400;
     color: #212121;
@@ -24,8 +29,8 @@
 }
 
 .boton{
-    width:100%;
     font-size: 1rem;
+    align-self: center;
 }
 
 
@@ -35,10 +40,17 @@
     font-family: 'Montserrat',sans-serif;
 }
 
-@media screen and (min-width:550px){
+@media screen and (min-width:768px){
+    .formulario{
+        flex-direction: row;
+    }
+    .formulario form{
+        width: 45%;
+        padding: 8px 5%;
+    }
     .formulario h2{
         font-size:2rem;
-        text-align: left;
+        text-align: center;
     }
     .boton{
         width:auto;

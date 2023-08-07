@@ -4,7 +4,7 @@ const Footer=()=>{
     return <footer className='footer' >
     <div className='footer__contenedor'>
         <a className='footer__logo' href='/' title="Aplicación Organización"><img src="/img/Logo.png" alt='Organización'/></a>
-        <div classname="footer__contenedor__iconos">
+        <div className="footer__contenedor__iconos">
             <h3 className='footer__contenedor__iconos__titulo'>Redes Sociales</h3>
         <div className='footer__iconos'>
             

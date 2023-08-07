@@ -5,6 +5,7 @@
     padding-bottom: 1rem;
     padding-left: 10%;
     padding-right: 10%;
+    position: relative;
 }
 
 .equipo__titulo{
@@ -26,4 +27,43 @@
     justify-content: space-around;
     flex-wrap:wrap;
     row-gap: 1rem;
+}
+
+
+.equipo__contenedorColor{
+    position: absolute;
+    right: 0rem;
+    display:flex;
+    align-items: center;
+}
+
+.equipo__contenedorColor__titulo{
+    display:none;
+    
+}
+.equipo__contenedorColor__titulo img{
+    width:1.5rem;
+}
+
+.equipo__seleccionarColor{
+    cursor: pointer;
+}
+
+@media screen and (min-width:550px){
+   
+    .equipo__contenedorColor{
+        right: 2rem;
+    }
+ 
+}
+@media screen and (min-width:768px){
+   
+    .equipo__contenedorColor__titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+
+ 
 }

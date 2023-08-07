@@ -1,6 +1,7 @@
-import "./CampoTexto.css";
+import "./Campo.css";
 
-const CampoTexto = (props) =>{    
+const Campo = (props) =>{    
+    const {tipo='text'}=props;
     
 
     const manejarCambio=(e)=>{
@@ -10,16 +11,17 @@ const CampoTexto = (props) =>{
     if(props.titulo==='Foto'){titulo='Foto (Ingresa una URL de Imagen)'}
     else{titulo=props.titulo}
 
-    return <div className="campo-texto">
-        <label> {titulo}</label>
-        <input 
+    return <div className={`campo-${tipo}`}>
+        <label htmlFor={titulo} > {titulo}</label>
+        <input id={titulo} 
         value={props.valor} 
         required={props.required} 
         placeholder={props.placeholder+'...'}
         onChange={manejarCambio}
+        type={tipo}
         />
     </div>
 }
 
 
-export default CampoTexto;
+export default Campo;

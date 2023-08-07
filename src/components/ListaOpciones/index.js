@@ -9,7 +9,7 @@ const ListaOpciones = (props) => {
 
   return (
     <div className="lista-opciones">
-      <label>Equipos</label>
+      <label >Equipos</label>
       <select value={props.valor} onChange={actualizarValue} required={props.required}  >
         <option disabled hidden value="Selecciona una opción">
           Selecciona una opción
