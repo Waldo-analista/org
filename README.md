@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Proyecto Organización Colaboradores usando React.js
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es el proyecto de práctica y aplicación de la librería React.js que se presenta en los dos primeros cursos de la formación React ONE G-5 del programa Oracle Next Education. Dichos cursos se denominan:
 
-## Available Scripts
+<ol>
+  <li><strong>React: desarrollando con JavaScript</strong></li>
+  <li><strong>React: como los componentes funcionan</strong></li>
+</ol>
 
-In the project directory, you can run:
+Los cursos son dictados por el instructor [Harland Lohora](https://github.com/HarlandLohora). El instructor domina muy bien el tópico objeto de enseñanza y además sus explicaciones son muy didácticas, su proceso de enseñanza el cual consiste en realizar y explicar todo lo que hace, facilita el ir replicando sus pasos y aprender haciendo. Sin embargo, para seguirle el ritmo, es necesario tener un cierto background sobre JavaScript en temas fundamentales para encontrarle sentido y utilidad a lo que hace. Recomiendo 100% al instructor Harland.
 
-### `npm start`
+He seguido los pasos del instructor y he recreado 100% el proyecto del curso. Además, he dado diseño responsive a la página y he agregado algunos aspectos visuales adicionales. He desplegado el proyecto en render.com desde un repositorio en el cual tengo el código tal y como lo tengo en local y render se encarga de build el proyecto. El link del proyecto es: [Proyecto Organización desplegado en Render](https://aluraorg.onrender.com/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+También he desplegado el proyecto en Vercel.com construyendo el build en local y subiendolo a un [repositorio](https://github.com/Waldo-analista/orgdeployalternativo) en mi github luego lo he desplegado en Vercel y el link es el siguiente: [Proyecto Organización desplegado en Vercel](https://colaborador-org.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El proyecto consiste en la creación de una herramienta para mostrar colaboradores según el área de la organización en que se desempeñe. Se practican muchos conceptos entre ellos respecto a React mismo ya sea: sintaxis JSX, elementos, componentes, estados, hooks, pasar datos entre componentes e instalación y uso de dependencias. También se practican conceptos de JavaScript mismo ya sea: Métodos Map y Filter, spread operator(...), desempaquetamiento de atributos de objetos (destructuring assignment), asignación de un valor por defecto en la destructuracion de objetos cuando un atributo es undefined, uso del operador && el cual devuelve el primer valor falsy que encuentre o el último valor si todos son truthy.
 
-### `npm test`
+A continuación muestro screenshots del proyecto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Proyecto completo:
 
-### `npm run build`
+Imagen del proyecto completo con los formularios mostrados
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Imagen de Proyecto Completo](./public/screenshots/abierto.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Imagen del proyecto completo sin los formularios mostrados
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Imagen de Proyecto Completo](./public/screenshots/cerrado.png)
 
-### `npm run eject`
+## Creación de Equipo y Colaborador:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Creación de Equipo y Colaborados](./public/screenshots/creacionEquipo.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Funcionalidad Like y Cambio de Colores:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Likes y Cambio de Colores](./public/screenshots/likes_cambioColor.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Uso de la librería SweetAlert:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Alerta implementada usando SweetAlert](./public/screenshots/sweetalert.png)
