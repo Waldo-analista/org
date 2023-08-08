@@ -1,6 +1,5 @@
 # Proyecto Organización Colaboradores usando React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Este es el proyecto de práctica y aplicación de la librería React.js que se presenta en los dos primeros cursos de la formación React ONE G-5 del programa Oracle Next Education. Dichos cursos se denominan:
 
 <ol>
